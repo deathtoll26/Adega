@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 734px;
+            margin-left: 0px;
+        }
+        .auto-style6 {
+            height: 80px;
+        }
+        .auto-style7 {
+            height: 176px;
+        }
+        .auto-style8 {
+            height: 449px;
+            width: 156px;
+        }
+        .auto-style9 {
+            height: 464px;
+            width: 898px;
+        }
+        .auto-style12 {
+            font-size: xx-large;
+            color: #FFFFFF;
+        }
+        .auto-style13 {
+            height: 449px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1" aria-autocomplete="none" style="background-color: #99CCFF">
+            <tr>
+                <td class="auto-style7" dir="auto" style="background-image: none; background-color: #66CCFF;">
+                </td>
+                <td class="auto-style7" dir="auto" style="background-image: none; background-color: #66CCFF;">
+                    <span class="auto-style12" style="color: #000000; background-color: #66CCFF;">Adega<br />
+                    <br />
+                    </span>
+                    <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" OnMenuItemClick="Menu1_MenuItemClick" Orientation="Horizontal" CssClass="auto-style12" StaticSubMenuIndent="16px">
+                        <DynamicHoverStyle BorderColor="Black" />
+                        <DynamicMenuItemStyle ForeColor="White" />
+                        <DynamicMenuStyle BorderColor="#663300" />
+                        <StaticMenuItemStyle BorderColor="Black" BorderStyle="Dashed" ForeColor="Black" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style8" dir="ltr" style="background-color: #66CCFF;"></td>
+                <td class="auto-style13" dir="auto" style="background-color: #66CCFF;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <p class="auto-style9" style="background-color: #66CCFF">
+                            <br />
+                        </p>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style6" colspan="2" dir="auto" style="background-image: none; background-color: #66CCFF;">
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
